@@ -1,0 +1,441 @@
+* {
+  background: transparent  ;
+  color: black  ;
+  box-shadow: none  ;
+  text-shadow: none  ;
+  letter-spacing: normal  ;
+  word-spacing: normal  ;
+}
+
+a,
+a:visited {
+  text-decoration: underline;
+}
+
+.entry-content a[href]:after,
+.entry a[href]:after {
+  content: " (" attr(href) ")";
+}
+
+abbr[title]:after {
+  content: " (" attr(title) ")";
+}
+
+a[href^="javascript:"]:after,
+a[href^="#"]:after,
+[class^="meta"] a:after,
+[class$="meta"] a:after,
+.page-link a:after,
+.postmetadata a:after,
+.gallery-item a:after,
+.postinfo a:after,
+.entry h2 a:after,
+.entry-taxonomy a:after,
+.tags a:after,
+#masthead a:after {
+  content: ""  ;
+}
+
+pre,
+blockquote {
+  page-break-inside: avoid;
+}
+
+thead {
+  display: table-header-group;
+}
+
+tr,
+img {
+  page-break-inside: avoid;
+}
+
+img {
+  max-width: 100%;
+}
+
+@page {
+  margin: 1cm;
+}
+
+p,
+h2,
+h3 {
+  orphans: 3;
+  widows: 3;
+}
+
+h2,
+h3 {
+  page-break-after: avoid;
+}
+
+body {
+  min-width: 0  ;
+}
+
+div,
+section,
+article,
+header,
+hgroup,
+footer,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+blockquote,
+table,
+fieldset {
+  margin: 0  ;
+  padding: 0  ;
+  border: 0 none  ;
+  float: none  ;
+  position: static  ;
+  height: auto  ;
+  width: auto  ;
+  max-width: none  ;
+  max-height: none  ;
+  min-width: 0  ;
+  min-height: 0  ;
+}
+
+a,
+span,
+time,
+code,
+small {
+  border: 0 none  ;
+  float: none  ;
+  display: inline  ;
+}
+
+img {
+  border-width: 0  ;
+  border-radius: 0  ;
+  padding: 0  ;
+}
+
+* {
+  font-family: inherit  ;
+  font-size: 100%  ;
+  line-height: 1.25  ;
+}
+
+body {
+  font-family: Palatino, "Palatino Linotype", serif  ;
+  font-size: 12pt  ;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif  ;
+  text-transform: none  ;
+  font-style: normal  ;
+  text-align: left  ;
+  font-variant: normal  ;
+  font-weight: normal  ;
+}
+
+strong,
+b,
+th,
+thead,
+dt {
+  font-weight: bold  ;
+}
+
+em,
+i {
+  font-style: italic  ;
+}
+
+h1 {
+  font-size: 2em  ;
+  padding: 1.25em 0  ;
+}
+
+h2 {
+  font-size: 1.75em  ;
+  padding: 1.51786em 0  ;
+}
+
+h3 {
+  font-size: 1.5em  ;
+  padding: 1.45833em 0  ;
+}
+
+h4 {
+  font-size: 1.33333em  ;
+  padding: 1.25em 0  ;
+}
+
+h5 {
+  font-size: 1.16667em  ;
+  padding: 1.51785em 0  ;
+}
+
+h1+h2,
+h2+h3,
+h3+h4,
+h4+h5,
+h5+h6 {
+  padding-top: 0  ;
+}
+
+p,
+ul,
+ol,
+dl,
+address {
+  margin: 0 0 1em  ;
+}
+
+:first-letter,
+:first-line,
+.text .content>p:first-child:first-letter {
+  display: inline  ;
+  position: static  ;
+  padding: 0  ;
+  margin: 0  ;
+  font-size: inherit  ;
+  line-height: inherit  ;
+  background: none  ;
+  color: inherit  ;
+  float: none  ;
+}
+
+ol {
+  list-style: decimal outside  ;
+}
+
+ul {
+  list-style: circle outside  ;
+}
+
+li ol,
+li ul {
+  margin-bottom: 0  ;
+}
+
+blockquote,
+ul,
+ol,
+dd {
+  padding-left: 1.5em  ;
+}
+
+pre,
+code,
+kbd,
+tt {
+  font-family: Consolas, monospace  ;
+  border: 0 none  ;
+}
+
+table,
+th,
+td {
+  border: 1pt solid black  ;
+  border-collapse: collapse  ;
+}
+
+th,
+td {
+  padding: .25em .5em  ;
+}
+
+#footer,
+#colophon {
+  padding: 2em 0 1em  ;
+  text-align: center  ;
+}
+
+.entry-date,
+.post-date,
+.date {
+  text-align: left  ;
+}
+
+.entry-date *,
+.post-date * {
+  display: inline  ;
+  position: static  ;
+}
+
+.description {
+  display: block  ;
+  padding: 0  ;
+}
+
+.widget,
+aside,
+.widget-area,
+[role="complemantary"],
+#supplementary,
+.secondary,
+#wpstats,
+#wpadminbar,
+#help,
+#sidebar,
+.sidebar,
+#right_col,
+nav,
+#nav,
+.nav,
+.navigation,
+[role="navigation"],
+#nav-above,
+#nav-below,
+#nav-post,
+#navigation,
+.navigate-single,
+.pagination,
+#pagesnav,
+#pagetab,
+.nav-entries,
+#navbar,
+#menu,
+.menu,
+.menu-header,
+#menus,
+.main-nav,
+#topmenu,
+#menu-primary,
+.navigation-menu,
+.navigation-single,
+.breadcrumb,
+.breadcrumbs,
+.skip-link,
+#skiptocontent,
+.skip-content,
+.pagenav,
+.page-links,
+.post-navigation,
+.page-link,
+.postpages,
+.post-nav,
+.postnav,
+.sharedaddy,
+.post-edit-link,
+.more-link,
+.screen-reader-text,
+.comment-likes,
+legend,
+img,
+.page-list,
+#tag-cloud,
+#footer #top,
+#right>.subcontainer,
+#mainmenu,
+#wrap>#rightside,
+#wrap>#leftside,
+#topnav,
+#footer>.archives,
+#syndication,
+.primary-links,
+.sideheading,
+.sideheading+#credit,
+.main>br,
+#content_bg #right,
+#skip,
+.secondaryColumn,
+#ancillary>.inside,
+#inner-wrapper .hentry>.post-date,
+#contentdesc,
+#headerbanner>p,
+#footer>.foot1,
+#footer>.foot2,
+#footer>.foot3,
+#credits #creditsright,
+#obar,
+#pagetabs,
+.postwrapper+.title,
+.postwrapper+.title+.post,
+#content-inner+.title,
+#content-inner+.title+.post,
+#rss-feed,
+[href="#nav"],
+#footer-secondary #sticky-posts,
+.meta>div>h3,
+#dooncha_sidebar,
+#search_menu,
+#topbanner>div,
+#follow,
+#glass-bottomblock,
+#controls>li,
+#respond,
+form,
+input,
+select,
+textarea,
+.loggedout-follow-normal,
+#wordads-preview-parent {
+  display: none 
+;
+}
+
+body.secondary {
+  display: inherit  ;
+}
+
+div:before,
+section:before,
+article:before,
+div:after,
+section:after,
+article:after {
+  display: none  ;
+}
+
+.hentry img {
+  display: inline-block  ;
+  max-width: 100%;
+}
+
+.hentry .aligncenter {
+  display: block  ;
+  margin: 0 auto 1em  ;
+  text-align: center  ;
+}
+
+.hentry .alignright {
+  float: right  ;
+  margin: 0 0 .5em 1em  ;
+}
+
+.hentry .alignleft {
+  float: left  ;
+  margin: 0 1em .5em 0  ;
+}
+
+.hentry .alignnone {
+  display: inline-block;
+}
+
+.gallery-item {
+  float: left  ;
+  width: 33%  ;
+  margin: 1em 0 1.5em  ;
+  text-align: center  ;
+}
+
+.hentry .corner,
+.hentry .lefth2img,
+.hentry>.category>img,
+.postmeta img {
+  display: none  ;
+}
